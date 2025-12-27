@@ -9,7 +9,7 @@
         input { padding: 10px; font-size: 16px; width: 200px; }
         button { padding: 10px 20px; font-size: 16px; background-color: #28a745; color: white; border: none; cursor: pointer; }
         button:hover { background-color: #218838; }
-        .resultado { color: rgb(0, 255, 26); font-size: 1.5em; margin-top: 20px; font-weight: bold; }
+        .resultado { color: rgb(3, 99, 13); font-size: 1.5em; margin-top: 20px; font-weight: bold; }
         input[type="radio"] { 
         width: auto;   
         margin: 5px;  
@@ -20,11 +20,15 @@
 
     <div class="caixa">
         <h1>CALCULADORA DATAS 🗓️</h1>
-        <p>Descubra que dia foi (ou será) x semanas atrás.</p>
+        <p>Descubra que data específica foi x dias, semanas, meses ou semanas atrás</p>
 
         <form method="POST">
-            <label for="campo_semanas">Quantas semanas?</label>
+            <label for="campo_semanas">Qual unidade de tempo deseja utilizar:</label>
             <br>
+            <input type="radio" id="op-" name="tipo" value="dia"><label for="op-">Dias</label>
+            <input type="radio" id="op-" name="tipo" value="semana"><label for="op-">Semanas</label>
+            <input type="radio" id="op-" name="tipo" value="mes"><label for="op-">Meses</label>
+            <input type="radio" id="op-" name="tipo" value="ano"><label for="op-">Anos</label>
             <br>
             
             <input type="number" id="campo_semanas" name="semanas_input" placeholder="Digite o número..." required>
@@ -33,10 +37,10 @@
             <br>
 
             <input type="radio" id="op-" name="operacao" value="(-)">
-            <label for="op-">VOLTAR(-)</label>
+            <label for="op-">VOLTAR (-)</label>
 
             <input type="radio" id="op+" name="operacao" value="(+)">
-            <label for="op+">AVANÇAR(+)</label>
+            <label for="op+">AVANÇAR (+)</label>
 
             <br>
             <br>
