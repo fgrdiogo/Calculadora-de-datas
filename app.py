@@ -58,7 +58,7 @@ def homepage():
                 data_antiga_formatada = data_antiga.strftime("%d/%m/%y")
                 resultado = data_antiga_formatada
             else:
-                mes_digitado = ano * timedelta(days=365)
+                mes_digitado = mes * timedelta(days=365)
                 data_atual = datetime.now()
                 data_antiga = data_atual + mes_digitado
                 data_antiga_formatada = data_antiga.strftime("%d/%m/%y")
